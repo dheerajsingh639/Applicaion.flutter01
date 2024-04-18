@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,10 +34,7 @@ class MyApp extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Container(
-
-                    child: Image.asset('../images/Strawberry.png'),
-                  ),
+                  Image.asset('../images/Strawberry.png'),
                 ],
               ),
               const SizedBox(height: 10), // Add space between rows
